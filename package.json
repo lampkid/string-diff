@@ -1,0 +1,33 @@
+{
+  "name": "string-diff",
+  "version": "0.0.1",
+  "description": "a text or string diff migrated from a diff implementation by php",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel index.js -d lib --copy-files && lessc index.less lib/index.css",
+    "prepublish": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lampkid/string-diff.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "less": "^2.7.3"
+  },
+  "keywords": [
+    "text-diff",
+    "string-diff",
+    "js-diff"
+  ],
+  "author": "lampkid",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/lampkid/string-diff/issues"
+  },
+  "homepage": "https://github.com/lampkid/string-diff#readme"
+}

@@ -4,7 +4,7 @@
   "description": "a text or string diff migrated from a diff implementation by php",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel index.js -d lib --copy-files && lessc index.less lib/index.css",
+    "build": "babel src -d lib --copy-files && lessc src/index.less lib/index.css",
     "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

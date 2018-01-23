@@ -1,6 +1,6 @@
 {
   "name": "string-diff",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a text or string diff migrated from a diff implementation by php",
   "main": "lib/index.js",
   "scripts": {

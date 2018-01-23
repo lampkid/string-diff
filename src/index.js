@@ -78,6 +78,7 @@ class Diff
         // compute the table of longest common subsequence lengths
         const table = Diff.computeTable(sequence1, sequence2, start, end1, end2);
 
+
         // generate the partial diff
         const partialDiff =
             Diff.generatePartialDiff(table, sequence1, sequence2, start);
@@ -154,7 +155,7 @@ class Diff
         for (let index1 = 1; index1 <= length1; index1++) {
 
             // create the new row
-            table[index1] = [];
+            table[index1] = [0];
 
             // loop over the columns
             for (let index2 = 1; index2 <= length2; index2++) {
@@ -396,7 +397,6 @@ class Diff
                 "  </tr>\n"].join('');
 
             index = Math.max(leftIndex, rightIndex);
-            console.log('index:', index, leftIndex, rightIndex);
         }
 
         // return the HTML
